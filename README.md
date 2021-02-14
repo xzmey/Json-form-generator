@@ -1,1 +1,28 @@
-# Json-form-generator
+Пример в файле example.php 
+
+{
+"form": {
+  "name": "Название формы",
+  "postmessage": "Сообщение в случае успешного заполнения формы",
+  "items": [{
+    "type": "filler",
+    "attributes": {
+    "message": "Произвольные текст"
+    }
+  }, {
+    "type": "text",
+    "attributes": {
+    "name": "Имя элемента",
+    "placeholder": "Текст для placeholder",
+    "required": true,
+    "value": "",
+    "label": "Label для элемента",
+    "class": "css-class",
+    "validationRules": [{
+      "type": "email"
+      }],
+    "disabled": false
+    }
+  }]
+  }
+}
